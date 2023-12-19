@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.gamearea{
+    width: min(100%, 500px);
+    height: calc(100vh - 20px);
+    position: relative;
+    background-color: rgb(6, 17, 29);
+    box-shadow: 0 0 10px #514a4a;
+}
+
+.gametitle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #0d3b8a;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.gametext{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #0d3b8a;
+    font-size: 3rem;
+    font-weight: 100;
+    transform: translateY(-50%);
+    transition: all 1s ease;
+}
+
+.gametext hr{
+    width: 100%;
+    height: 1px;
+    background-color: #0d3b8a;
+    border: none;
+}
+
+.closetext{
+    transform: translateY(0);
+    opacity: 0;
+}
+
+.typingJet{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.typingJet svg{
+    width: 40px;
+    height: 40px;
+    fill: #0e2c61;
+    opacity: 0.8;
+}
+
+.enimies{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.enime{
+    position: absolute;
+    top: 0px;
+    left: 40%;
+    color: rgb(121, 121, 121);
+}
+
+.enime svg{
+    width: 40px;
+    height: 40px;
+    fill: #0e2c61;
+    opacity: 0.8;
+}
+
+.enimeText{
+    background-color: #000;
+    padding: 5px;
+}
+
+.endline{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-top: #0d3b8a66 2px dashed;
+}
