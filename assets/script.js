@@ -109,6 +109,7 @@ function moveEnimies() {
             gameend = true;
             gametext.innerHTML += `<br>Game Over<br>Accuracy: ${Math.floor((totalhits / totalshoots) * 100)}%`;
             gametext.classList.remove("closetext");
+            break;
         }
     }
 }
