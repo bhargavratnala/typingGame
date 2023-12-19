@@ -107,7 +107,7 @@ function moveEnimies() {
         if(height[i] > endHeight - 50){
             clearInterval(intervel);
             gameend = true;
-            gametext.innerHTML += `<br>Game Over`;
+            gametext.innerHTML += `<br>Game Over<br>Accuracy: ${Math.floor((totalhits / totalshoots) * 100)}%`;
             gametext.classList.remove("closetext");
         }
     }
